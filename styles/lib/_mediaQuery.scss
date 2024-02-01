@@ -1,0 +1,187 @@
+@import url('./variables');
+
+@mixin media($width: 786) {
+	@media screen and (max-width: '#{$width}px' ) {
+		@content;
+	}
+}
+
+@mixin mq250 {
+	@include media(250) {
+		@content;
+	}
+}
+
+@mixin mq268 {
+	@include media(268) {
+		@content;
+	}
+}
+
+@mixin mq300 {
+	@include media(300) {
+		@content;
+	}
+}
+
+@mixin mq320 {
+	@include media(320) {
+		@content;
+	}
+}
+
+@mixin mq350 {
+	@include media(350) {
+		@content;
+	}
+}
+
+@mixin mq390 {
+	@include media(390) {
+		@content;
+	}
+}
+
+@mixin mq420 {
+	@include media(420) {
+		@content;
+	}
+}
+
+@mixin mq500 {
+	@include media(500) {
+		@content;
+	}
+}
+
+@mixin mq550 {
+	@include media(550) {
+		@content;
+	}
+}
+
+@mixin mq560 {
+	@include media(560) {
+		@content;
+	}
+}
+
+@mixin mq576 {
+	@include media(576) {
+		@content;
+	}
+}
+
+@mixin mq650 {
+	@include media(650) {
+		@content;
+	}
+}
+
+@mixin mq768 {
+	@include media(768) {
+		@content;
+	}
+}
+
+@mixin mq786 {
+	@include media(786) {
+		@content;
+	}
+}
+
+@mixin mq854 {
+	@include media(854) {
+		@content;
+	}
+}
+
+@mixin mq850 {
+	@include media(850) {
+		@content;
+	}
+}
+
+@mixin mq900 {
+	@include media(900) {
+		@content;
+	}
+}
+
+@mixin mq903 {
+	@include media(903) {
+		@content;
+	}
+}
+
+@mixin mq920 {
+	@include media(920) {
+		@content;
+	}
+}
+
+@mixin mq960 {
+	@include media(960) {
+		@content;
+	}
+}
+
+@mixin mq1024 {
+	@include media(1024) {
+		@content;
+	}
+}
+
+@mixin mq1080 {
+	@include media(1080) {
+		@content;
+	}
+}
+
+@mixin mq1118 {
+	@include media(1118) {
+		@content;
+	}
+}
+
+@mixin mq1186 {
+	@include media(1186) {
+		@content;
+	}
+}
+
+@mixin mq1200 {
+	@include media(1200) {
+		@content;
+	}
+}
+
+@mixin mq1296 {
+	@include media(1296) {
+		@content;
+	}
+}
+
+@mixin mq1350 {
+	@include media(1350) {
+		@content;
+	}
+}
+
+@mixin mq1400 {
+	@include media(1400) {
+		@content;
+	}
+}
+
+@mixin mq1500 {
+	@include media(1500) {
+		@content;
+	}
+}
+
+@mixin mq1600 {
+	@include media(1600) {
+		@content;
+	}
+}

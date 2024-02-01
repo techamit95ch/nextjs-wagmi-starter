@@ -1,0 +1,81 @@
+$screens: 250, 268, 300, 320, 350, 390, 420, 500, 550, 560, 576, 650, 768, 786, 850, 854, 900, 903,
+	920, 1000, 1024, 1080, 1118, 1200, 1296, 1350, 1400, 1600, 1800;
+$font-family: 'Inter';
+$font-style: normal;
+$text-color: #f0e9f1;
+$buttom-text-transform: uppercase;
+$buttom-color: #0000;
+$font-weight: 300, 400, 500;
+$color-params: xx-light, x-light, light, semi-light, medium, semi-dark, dark, x-dark, xx-dark, deep,
+	black;
+$button-violet-border-color: #462c4f;
+$button-secondary-bg-color: #462c4f;
+$colors: (
+	darkblue: (
+		xx-light: #e8e9ec,
+		x-light: #d1d2d8,
+		light: #a4a5b1,
+		semi-light: #76798b,
+		medium: #494c64,
+		semi-dark: #1b1f3d,
+		dark: #161931,
+		x-dark: #0b0c18,
+		xx-dark: #0b0c18,
+		deep: #05060c,
+		black: #030306,
+	),
+	violet: (
+		xx-light: #f0e9f1,
+		x-light: #e1d3e2,
+		light: #c3a7c6,
+		semi-light: #a67aa9,
+		medium: #884e8d,
+		semi-dark: #6a2270,
+		dark: #551b5a,
+		x-dark: #401443,
+		xx-dark: #2a0e2d,
+		deep: #150716,
+		black: #0b030b,
+	),
+	sky: (
+		xx-light: #eef9ff,
+		x-light: #def3ff,
+		light: #bce6ff,
+		semi-light: #9bdaff,
+		medium: #79cdff,
+		semi-dark: #58c1ff,
+		dark: #469acc,
+		x-dark: #357499,
+		xx-dark: #234d66,
+		deep: #122733,
+		black: #091319,
+	),
+	orange: (
+		xx-light: #fff4e9,
+		x-light: #fff4e9,
+		light: #fed2a7,
+		semi-light: #fdbc7b,
+		medium: #fca54f,
+		semi-dark: #fb8f23,
+		dark: #c9721c,
+		x-dark: #975615,
+		xx-dark: #64390e,
+		deep: #321d07,
+		black: #190e03,
+	),
+);
+$font-sizes: (
+	h1: 93px,
+	h2: 58px,
+	h3: 47px,
+	h4: 33px,
+	h5: 23px,
+	h6: 19px,
+	subtitle1: 16px,
+	subtitle2: 14px,
+	body1: 16px,
+	body2: 14px,
+	button: 14px,
+	caption: 12px,
+	overline: 10px,
+);

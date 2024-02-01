@@ -1,0 +1,49 @@
+@mixin responsive($breakpoint) {
+	@if $breakpoint == small-phone {
+		@media only screen and (width <= 31em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == phone {
+		@media only screen and (width <= 41em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tablet-portrait {
+		@media only screen and (width <= 56.25em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tablet-landscape {
+		@media only screen and (width <= 75em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == small-laptop {
+		@media only screen and (width <= 87.5em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == medium-laptop {
+		@media only screen and (width >= 87.5em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == large-laptop {
+		@media only screen and (width >= 100em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == big-desktop {
+		@media only screen and (width >= 112.5em) {
+			@content;
+		}
+	}
+}

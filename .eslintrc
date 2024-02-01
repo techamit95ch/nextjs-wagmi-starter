@@ -1,0 +1,189 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"es2021": true
+	},
+	"extends": [
+		"plugin:@next/next/recommended",
+		"next",
+		"next/core-web-vitals",
+		"plugin:jsx-a11y/recommended",
+		"plugin:prettier/recommended",
+		"plugin:react/recommended",
+		"plugin:react/jsx-runtime",
+		"plugin:react-hooks/recommended"
+	],
+	"overrides": [
+		{
+			"files": ["*.ts"],
+			"rules": {
+				"max-len": [
+					"error",
+					{
+						"code": 150
+					}
+				],
+				"@typescript-eslint/no-misused-new": "warn"
+			}
+		}
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "./tsconfig.json",
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": [
+		"@typescript-eslint",
+		"@next/eslint-plugin-next",
+		"import",
+		"simple-import-sort",
+		"jsx-a11y",
+		"no-loops",
+		"eslint-plugin-no-inline-styles",
+		"sort-keys-fix",
+		"sort-keys"
+	],
+	"rules": {
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"ts": "never",
+				"tsx": "never"
+			}
+		],
+		"sort-keys": [
+			"error",
+			"asc",
+			{ "allowLineSeparatedGroups": true, "natural": true, "caseSensitive": true }
+		],
+		"sort-keys-fix/sort-keys-fix": "off",
+		"sort-keys/sort-keys-fix": 2,
+		"import/no-duplicates": ["error", { "considerQueryString": true }],
+		"jsx-a11y/anchor-is-valid": [
+			"error",
+			{
+				"components": ["Link"],
+				"specialLink": ["hrefLeft", "hrefRight"],
+				"aspects": ["invalidHref", "preferButton"]
+			}
+		],
+		"max-len": [
+			"error",
+			{
+				"code": 300
+			}
+		],
+		"no-console": 2,
+		"no-loops/no-loops": 2,
+		"no-empty": "error",
+		"no-inline-styles/no-inline-styles": 2,
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"no-throw-literal": "off",
+		"no-return-await": "off",
+		"no-restricted-imports": [
+			"error",
+			{
+				"patterns": ["@mui/*/*/*"]
+			}
+		],
+		"no-warning-comments": [
+			"warn",
+			{
+				"terms": ["todo", "fixme", "eslint-disable", "@ts-ignore"],
+				"location": "anywhere"
+			}
+		],
+		"no-restricted-syntax": [
+			"error",
+			{
+				"selector": "TSEnumDeclaration:not([const=true])",
+				"message": "Don't declare non-const enums"
+			}
+		],
+		"no-unused-vars": "off",
+		"no-const-assign": "error",
+		"newline-before-return": "error",
+		"prefer-const": "error",
+		"react/jsx-filename-extension": [
+			"error",
+			{
+				"extensions": [".tsx"]
+			}
+		],
+		"react/jsx-props-no-spreading": [
+			"warn",
+			{
+				"html": "ignore",
+				"custom": "ignore",
+				"explicitSpread": "ignore",
+				"exceptions": ["string"]
+			}
+		],
+		"react/display-name": "warn",
+		"simple-import-sort/exports": "error",
+		"react/jsx-uses-react": "off",
+		"react/prop-types": "off",
+		"react/react-in-jsx-scope": "off",
+		"react-hooks/exhaustive-deps": "error",
+		"require-await": "off",
+		"simple-import-sort/imports": [
+			"error",
+			{
+				"groups": [
+					["^\\u0000"],
+					["^react", "^@?\\w"],
+					["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+					["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"]
+				]
+			}
+		],
+		"@typescript-eslint/no-empty-interface": [
+			"error",
+			{
+				"allowSingleExtends": false
+			}
+		],
+		"@typescript-eslint/dot-notation": "error",
+		"@typescript-eslint/no-misused-new": "error",
+		"@typescript-eslint/no-misused-promises": [
+			"error",
+			{
+				"checksSpreads": false,
+				"checksVoidReturn": false
+			}
+		],
+		"@typescript-eslint/consistent-type-imports": "error",
+		"@typescript-eslint/no-unnecessary-condition": "error",
+		"@typescript-eslint/promise-function-async": "error",
+		"@typescript-eslint/require-array-sort-compare": "error",
+		"@typescript-eslint/restrict-plus-operands": "error",
+		"@typescript-eslint/restrict-template-expressions": "error",
+		"@typescript-eslint/switch-exhaustiveness-check": "error",
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"vars": "local",
+				"args": "after-used",
+				"ignoreRestSiblings": false,
+				"destructuredArrayIgnorePattern": "^_"
+			}
+		],
+		"@typescript-eslint/no-throw-literal": "error",
+		"@typescript-eslint/return-await": "error",
+		"@typescript-eslint/no-explicit-any": "error"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		},
+		"import/resolver": {
+			"typescript": {}
+		}
+	}
+}
