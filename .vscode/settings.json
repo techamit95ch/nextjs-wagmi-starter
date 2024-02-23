@@ -1,4 +1,6 @@
 {
+	"WillLuke.nextjs.addTypesOnSave": true,
+	"WillLuke.nextjs.hasPrompted": true,
 	"[scss]": {
 		"editor.colorDecorators": true,
 		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
@@ -19,12 +21,11 @@
 	"editor.definitionLinkOpensInPeek": true,
 	"editor.foldingImportsByDefault": true,
 	"editor.fontFamily": "'Fira Code', 'Fira Code Retina', 'Fira Code Light', 'Courier New', monospace",
-	// "editor.fontFamily": "\"Fira Code\", Consolas, Hack, monospace",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 15,
 	"editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
-	"editor.formatOnSaveMode": "modificationsIfAvailable", // required to format on save
+	"editor.formatOnSaveMode": "modificationsIfAvailable",
 	"editor.formatOnType": false,
 	"editor.lineHeight": 32,
 	"editor.quickSuggestions": {
@@ -43,34 +44,20 @@
 		"*.ts": "typescriptreact"
 	},
 	"files.autoGuessEncoding": true,
-	"files.autoSave": "off", // optional but recommended
+	"files.autoSave": "off",
 	"files.insertFinalNewline": true,
-	"files.simpleDialog.enable": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
 	"less.validate": false,
 	"scss.validate": false,
 
-	// "tailwindCSS.experimental.configFile": "../tailwind.config.js",
-
 	"tailwindCSS.includeLanguages": {
 		"plaintext": "html"
 	},
-	// "stylelint.validate": ["css", "scss", ".module.scss"],
+	"stylelint.validate": ["css", "scss", ".module.scss"],
 	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"typescript.tsserver.pluginPaths": ["typescript-plugin-css-modules"],
-	"window.titleBarStyle": "custom",
-	"workbench.colorCustomizations": {
-		"statusBar.background": "#000000",
-		"statusBar.debuggingBackground": "#ff7800",
-		"statusBar.foreground": "#ebe8e8",
-		"statusBar.noFolderBackground": "#EB4817",
-		"statussBar.prominentBackground": "#ca4545",
-		"titleBar.activeBackground": "#232323",
-		"titleBar.activeForeground": "#ebe8e8",
-		"titleBar.border": "#EB4817",
-		"titleBar.inactiveBackground": "#000000"
-	},
+
 	"workbench.colorTheme": "Monokai"
 }
