@@ -24,6 +24,7 @@
 		"syler.sass-indented",
 		"stylelint.vscode-stylelint",
 		"bradlc.vscode-tailwindcss",
-		"planbcoding.vscode-react-refactor"
+		"planbcoding.vscode-react-refactor",
+		"prisma.prisma"
 	]
 }
